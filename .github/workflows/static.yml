@@ -39,7 +39,7 @@ jobs:
           # Upload entire repository
           path: '.'
           # Specify the directory containing the GitHub Pages content
-          source: pages/FR/indexFR.html
+          
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
