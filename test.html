@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Change Label Text on Checkbox Check (CSS Only)</title>
+  <style>
+    /* Hide the checkbox */
+    input[type="checkbox"] {
+      /* display: none; */
+    }
+
+    /* Style for the custom checkbox label */
+    label.checkbox-label {
+      display: inline-block;
+      cursor: pointer;
+    }
+
+    /* Style for checked state of the checkbox label */
+    input[type="checkbox"]:checked+label.checkbox-label::after {
+      content: "Checkbox is checked!";
+      /* Update label text */
+      color: green;
+      /* Change text color */
+    }
+
+    /* Style for unchecked state of the checkbox label */
+    input[type="checkbox"]+label.checkbox-label::after {
+      content: "Checkbox";
+      /* Initial label text */
+      color: black;
+      /* Default text color */
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Checkbox Input and Label -->
+  <input type="checkbox" id="myCheckbox">
+  <label class="checkbox-label" for="myCheckbox"></label>
+
+</body>
+
+</html>
