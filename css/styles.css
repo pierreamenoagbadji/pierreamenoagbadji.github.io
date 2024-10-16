@@ -28,7 +28,8 @@ body {
   word-wrap: break-word;
   margin: 0 auto;
   padding: 2em 1em 2em 1em;
-  font-family: "Inconsolata", monospace;
+  /* font-family: "Inconsolata", monospace; */
+  font-family: "Crimson Text", serif;
   font-style: normal;
   font-size: 1em;
   font-optical-sizing: auto;
