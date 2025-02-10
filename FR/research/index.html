@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../assets/waves_24dp_000000_FILL0_wght400_GRAD0_opsz24.png">
+    <title>Pierre Amenoagbadji</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../css/fonts.css">
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/topnav.css">
+    
+    <!-- Java Script -->
+    <script src="../../js/toggleMenu.js"></script> 
+    
+    <!-- Polices -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+
+    <nav>
+        <div class="nav-container">
+            <div class="nav-title">Pierre Amenoagbadji</div>
+            <button class="hamburger" onclick="toggleMenu()">
+                <span class="material-icons" id="menuIcon">menu</span>
+            </button>
+            <div class="nav-links">
+                <a href="../home">Accueil</a>
+                <a href="../research", class="active">Recherche</a>
+                <a href="../teaching">Enseignement</a>
+                <a href="../../assets/CV_AMENOAGBADJI_fr.pdf", target="_blank">CV</a>
+                <a href="../../EN/research/"><img src="../../assets/drapeauUK_small.png", alt="Drapeau UK", class="flag-icon">EN</a>
+            </div>
+        </div>
+
+        <!-- Mobile menu (Initially hidden) -->
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="../home">Accueil</a>
+            <a href="../research", class="active">Recherche</a>
+            <a href="../teaching">Enseignement</a>
+            <a href="../../assets/CV_AMENOAGBADJI_fr.pdf", target="_blank">CV</a>
+            <a href="../../EN/research/"><img src="../../assets/drapeauUK_small.png", alt="Drapeau UK", class="flag-icon">EN</a>
+        </div>
+    </nav>
+    
+    <main>
+        <section>
+            <h1>Thèmes de recherche</h1>
+            <p>
+            Mon travail porte sur l'étude mathématique et la simulation numérique de phénomènes de propagation d'<em>ondes harmoniques</em> dans des milieux hétérogènes, <em>périodiques</em> ou <em>quasi-périodiques</em>. Les problèmes associés étant posés en domaine <em>infini</em>, je m'intéresse en particulier à: 
+            <ul>
+                <li>l'élaboration de <em>méthodes numériques</em> permettant de tronquer le domaine sans induire de modes parasites ;</li>
+                <li>l'étude du <em>principe d'absorption limite</em> ;</li>
+                <li>dans le contexte de mon postdoctorat, l'étude et le calcul numérique de <em>modes guidés</em> le long d'un défaut linéique.</li>
+            </ul>
+            </p>
+        </section>
+
+        <section>
+            <h1>Publications</h1>
+            Une liste est également disponible sur <span class="biblink"><a href="https://hal.science/search/index/q/*/authFullName_s/Pierre+Amenoagbadji", target="_blank">HAL</a></span> ou <span class="biblink"><a href="https://arxiv.org/search/math?searchtype=author&query=Amenoagbadji%2C+P", target="_blank">arXiv</a></span>.
+            <!-- <li>
+                <span class="bib-author"></span>: 
+                <span class="bib-title"></span>,
+                <span class="bib-status"></span>, 
+                2024. 
+                [<a href="", target="_blank">DOI</a>]
+                [<a href="", target="_blank">arXiv</a>]
+                [<a href="", target="_blank">HAL</a>]
+            </li> -->
+
+            <h2>Pré-publications</h2>
+            <ul>
+                <li>
+                    <span class="bib-author">P. Amenoagbadji, S. Fliss, P. Joly</span>: 
+                    <span class="bib-title">Time-harmonic wave propagation in junctions of two periodic half-spaces</span>, 
+                    <span class="bib-status">submitted</span>, 
+                    2024. 
+                    [<a href="https://arxiv.org/abs/2404.03806", target="_blank">arXiv</a>]
+                    [<a href="https://hal.science/hal-04533522v2", target="_blank">HAL</a>]
+                </li>
+            </ul>
+
+            <h2>Publications dans un journal</h2>
+            <ul>
+                <li>
+                    <span class="bib-author">P. Amenoagbadji, S. Fliss, P. Joly</span>: 
+                    <span class="bib-title">Wave propagation in one-dimensional quasiperiodic media</span>,
+                    <span class="bib-status">Communications in Optimization Theory, "Special Issue on numerical analysis and control dedicated to the memory of Professor Roland Glowinski"</span>, 
+                    2023.
+                    [<a href="https://cot.mathres.org/archives/1526", target="_blank">DOI</a>]
+                    [<a href="https://arxiv.org/abs/2301.01159", target="_blank">arXiv</a>]
+                    [<a href="https://hal.science/hal-03786730v2", target="_blank">HAL</a>]
+                </li>
+            </ul>
+
+            <h2>Manuscrit de thèse</h2>
+            <ul>
+                <li>
+                    <span class="bib-author">P. Amenoagbadji</span>: 
+                    <span class="bib-title">Propagation des ondes dans des milieux quasi-périodiques</span>,
+                    <span class="bib-status">soutenue le 13/12/2023, devant le jury composé de D. Gérard-Varet (Président), E. Bonnetier et A. Levitt (Rapporteurs), B. Delourme, S. Guenneau, et C. Le Bris (Examinateurs), S. Fliss et P. Joly (Encadrants)</span>.
+                    [<a href="https://theses.hal.science/tel-04452743", target="_blank">HAL</a>]
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h1>Communications orales</h1>
+            
+            <!-- <span class="bib-author"></span> on 
+            <span class="bib-title"></span>,
+            <span class="bib-location"></span>, 
+            <span class="bib-status"></span>. -->
+            <div class="oral-communication-container">
+                <details class="oral-communication" open>
+                    <summary>Année 2025</summary>
+                    <table class="listing-table">
+                        <tbody>
+                            <tr>
+                                <td class="cell-date">02/2025</td>
+                                <td>
+                                    <span class="bib-author">IMSI winter school and workshop</span> on 
+                                    <span class="bib-title">Reduced-Order Modeling for Complex Engineering Problems (from Analysis to Practical Implementation)</span>,
+                                    <span class="bib-location">Chicago</span>. 
+                                    <span class="bib-status"><a href="../../assets/Poster_IMSI_02_2025_AMENOAGBADJI.pdf", target="_blank">Poster presentation</a></span>.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="cell-date">01/2025</td>
+                                <td>
+                                    <span class="bib-author">AMS</span> 
+                                    <span class="bib-title">Joint Mathematics Meetings</span>,
+                                    <span class="bib-location">Seattle</span>, in
+                                    <span class="bib-status">Mathematics of Topological Insulators</span>.
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </details>
+
+                <details class="oral-communication">
+                    <summary>Année 2024</summary>
+                    <table class="listing-table">
+                        <tbody>
+                            <tr>
+                                <td class="cell-date">07/2024</td>
+                                <td>
+                                    <span class="bib-author"></span> 
+                                    <span class="bib-title">Simons Collaboration on Extreme Wave Phenomena</span>.
+                                    <span class="bib-status">Online presentation</span>.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="cell-date">06/2024</td>
+                                <td>
+                                    <span class="bib-author">WAVES 2024</span> 
+                                    <span class="bib-title">16th International Conference on Mathematical and Numerical Aspects of Wave Propagation</span>,
+                                    <span class="bib-location">Berlin</span>. 
+                                    <span class="bib-status">Online presentation</span>.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="cell-date">05/2024</td>
+                                <td>
+                                    <span class="bib-author">SIAM MS24</span> 
+                                    <span class="bib-title">SIAM Conference on Mathematical Aspects of Materials Science</span>,
+                                    <span class="bib-location">Pittsburgh</span>, in
+                                    <span class="bib-status">Analysis, Homogenization, and Spectral Problems in Materials Science</span>. 
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="cell-date">01/2024</td>
+                                <td>
+                                    <span class="bib-title">APAM Colloquium</span>,
+                                    <span class="bib-location">Columbia University</span>. 
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </details>
+
+                <details class="oral-communication">
+                    <summary>Année 2023</summary>
+                    <table class="listing-table">
+                        <tbody>
+                            <tr>
+                                <td class="cell-date">11/2023</td>
+                                <td>
+                                    <span class="bib-title">Séminaire de l'équipe Modélisation et Calcul Scientifique</span>,
+                                    <span class="bib-location">LAGA, Université Sorbonne Paris-Nord</span>. 
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="cell-date">07/2023</td>
+                                <td>
+                                    <span class="bib-title">Mathematical Aspects of Condensed Matter Physics</span>,
+                                    <span class="bib-location">ETH Zurich</span>. 
+                                    <span class="bib-status">Poster presentation</span>.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="cell-date">06/2023</td>
+                                <td>
+                                    <span class="bib-author">AQW2023</span> 
+                                    <span class="bib-title">The Arctic Quasiperiodic Workshop</span>,
+                                    <span class="bib-location">Luleå</span>. 
+                                    <span class="bib-status">Online presentation</span>.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="cell-date">04/2023</td>
+                                <td>
+                                    <span class="bib-title">Workshop on Computational Methods for Multiple Scattering</span>,
+                                    <span class="bib-location">Isaac Newton Institute, Cambridge</span>. 
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </details>
+
+                <details class="oral-communication">
+                    <summary>Année 2022</summary>
+                    <table class="listing-table">
+                        <tbody>
+                            <tr>
+                                <td class="cell-date">12/2022</td>
+                                <td>
+                                    <span class="bib-title">Séminaire EDP Nancy</span>,
+                                    <span class="bib-location">Institut Élie-Cartan de Lorraine, Strasbourg</span>. 
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="cell-date">11/2022</td>
+                                <td>
+                                    <span class="bib-title">Rencontre JCJC Ondes</span>,
+                                    <span class="bib-location">INRIA Université Côte d'Azur, Nice</span>. 
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="cell-date">09/2022</td>
+                                <td>
+                                    <span class="bib-author">Aspect'22</span> 
+                                    <span class="bib-title">Asymptotic Analysis & Spectral Theory</span>,
+                                    <span class="bib-location">Oldenburg University, Oldenburg</span>. 
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="cell-date">07/2022</td>
+                                <td>
+                                    <span class="bib-author">WAVES 2022</span> 
+                                    <span class="bib-title">15th International Conference on Mathematical and Numerical Aspects of Wave Propagation</span>,
+                                    <span class="bib-location">Palaiseau</span>. 
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="cell-date">06/2022</td>
+                                <td>
+                                    <span class="bib-author">CANUM-SMAI</span> 
+                                    <span class="bib-title">45e Congrès National d'Analyse Numérique</span>,
+                                    <span class="bib-location">Evian-les-Bains</span>. 
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="cell-date">06/2022</td>
+                                <td>
+                                    <span class="bib-author">AQW2022</span> 
+                                    <span class="bib-title">The Arctic Quasiperiodic Workshop</span>,
+                                    <span class="bib-location">Luleå</span>. 
+                                    <span class="bib-status">Online presentation</span>.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="cell-date">02/2022</td>
+                                <td>
+                                    <span class="bib-title">Conference on Mathematics of Wave Phenomena</span>,
+                                    <span class="bib-location">KIT, Karlsruhe</span>. 
+                                    <span class="bib-status">Online presentation</span>.
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </details>
+
+                <details class="oral-communication">
+                    <summary>Année 2021</summary>
+                    <table class="listing-table">
+                        <tbody>
+                            <tr>
+                                <td class="cell-date">10/2021</td>
+                                <td>
+                                    <span class="bib-author">CJCMA 2021</span> 
+                                    <span class="bib-title">Congrès des Jeunes Chercheuses et Chercheurs en Mathématiques Appliquées</span>,
+                                    <span class="bib-location">École Polytechnique, Palaiseau</span>. 
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="cell-date">10/2021</td>
+                                <td>
+                                    <span class="bib-author">SMAI</span> 
+                                    <span class="bib-title">10e Biennale Française des Mathématiques Appliquées et Industrielles</span>,
+                                    <span class="bib-location">La Grande-Motte</span>. 
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </details>
+            </div>
+            
+            <!-- <li>
+                <span class="bib-author"></span>: 
+                <span class="bib-title"></span>,
+                <span class="bib-status"></span>, 
+                2024. 
+                [<a href="", target="_blank">DOI</a>]
+                [<a href="", target="_blank">arXiv</a>]
+                [<a href="", target="_blank">HAL</a>]
+            </li> -->
+        </section>
+    </main>
+    
+
+    <footer>
+        <div class="footer-container">
+            &copy; 2024 Pierre Amenoagbadji
+        </div>
+    </footer>
+</body>
+</html>

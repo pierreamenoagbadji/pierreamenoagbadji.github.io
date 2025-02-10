@@ -1,0 +1,134 @@
+/* Navigation bar */
+nav {
+  background-color: var(--nav-background-color);
+  width: 100%;
+  padding: 0;
+}
+
+/* Navigation container */
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 20px 7.5%;
+}
+
+/* Title */
+.nav-title {
+  font-size: 1.2rem;
+  font-family: localFreightProBookItalic, "Times New Roman", Times, serif;
+/* 
+  font-size: 1.2rem;
+  font-family: "Inter", serif;
+  font-weight: 400; */
+}
+
+/* Navigation links */
+.nav-links {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #666666;
+  font-family: "Inter", serif;
+  font-weight: 400;
+  letter-spacing: 0.025rem;
+  font-size: 0.9rem;
+  padding: 10px 10px;
+  transition: color 0.3s;
+}
+
+/* Highlight the current active link */
+.nav-links a.active {
+  color: #cb791a;
+}
+
+
+/* Hover effect */
+.nav-links a:hover {
+  color: #cb791a;
+}
+
+/* Flag icon */
+.flag-icon {
+  width: 0.85rem;
+  height: auto;
+  max-width: 100%;
+  margin-right: 10px;
+  border-radius: 50%;
+  border: 1px solid #808080;
+}
+
+/* Hamburger menu icon (hidden by default) */
+.hamburger {
+  display: none;
+  color: #666666;
+  font-size: 1.8rem;
+  cursor: pointer;
+  background: none;
+  border: none;
+  transition: color 0.3s;
+}
+
+.hamburger .material-icons {
+  font-size: 2rem;
+}
+
+/* Hover effect on hamburger */
+.hamburger:hover {
+  color: #cb791a;
+}
+
+/* Responsive menu (hidden by default) */
+.mobile-menu {
+  display: none;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  text-align: left
+}
+
+.mobile-menu a {
+  display: block;
+  background: white;
+  color: #666666;
+  font-family: "Inter", serif;
+  font-weight: 400;
+  letter-spacing: 0.025rem;
+  font-size: 0.9rem;
+  padding: 20px 7.5%;
+  border-bottom: 1px solid #666666;
+  text-decoration: none;
+  margin: 0;
+  transition: background 0.3s;
+}
+
+/* Highlight the current active link */
+.mobile-menu a.active {
+  color: #cb791a;
+}
+
+.mobile-menu a:first-child {
+  border-top: 1px solid #808080;
+}
+
+.mobile-menu a:hover {
+  background: #f2f2f2;
+  color: #cb791a;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 600px) {
+  .nav-links {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}

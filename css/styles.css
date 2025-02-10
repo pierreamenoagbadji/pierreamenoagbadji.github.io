@@ -1,279 +1,117 @@
 /* Variables */
 :root {
   --max-width: calc(900px - (30px * 2));
-  --line-width: 2px;
-  --body-bg-color: #F9F5F2;
-  --body-color: #1B324B;
-  --header-bg-color: #7FBC8C;
-  --header-color: color-mix(in srgb, var(--body-color) 70%, var(--header-bg-color) 30%);
-  --nav-bg-color: var(--main-bg-color);
-  --nav-color: var(--body-color);
-  --main-bg-color: #fff;
-  --border-color: var(--body-color);
-  --fancy-button-color: #FFDB58;
-  --highlight-color: #FFDB58;
+  --nav-background-color: #f5f0e7; /* #f5f0e7 */
 }
 
-/* Basic reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Body and container */
+/* Global styles */
 body {
-  width: 100%;
-  max-width: var(--max-width);
-  word-wrap: break-word;
-  margin: 0 auto;
-  padding: 2em 1em 2em 1em;
-  /* font-family: "Inconsolata", monospace; */
-  font-family: "Crimson Text", serif;
-  font-style: normal;
-  font-size: 1em;
-  font-optical-sizing: auto;
-  font-variation-settings: "width" 100;
-  background-color: var(--body-bg-color);
-  color: var(--body-color);
-}
-
-header {
-  justify-content: space-between;
-  position: relative;
-  background-color: var(--header-bg-color);
-  border: var(--line-width) solid var(--border-color);
-  border-bottom: none;
-  border-radius: 0px 15px 0px 0px;
-}
-
-/* For all children of body except nav */
-header>*:not(nav) {
-  padding: 20px 0em 20px 2em;
-}
-
-header h1 {
-  font-size: 1.75em;
-}
-
-.container-name {
-  max-width: 60%;
-  display: inline-block;
-  text-align: left;
-  margin-right: 1em;
-}
-
-.container-name a {
-  color: var(--header-color);
-  text-decoration: none;
-}
-
-nav {
-  background-color: var(--header-bg-color);
-  padding: 0.5em 0em 0.5em 2em;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: start;
-  flex-wrap: wrap;
-  column-gap: 2em;
-}
-
-nav li {
-  max-width: 100%;
-}
-
-.current-nav-section {
-  color: var(--body-bg-color);
-}
-
-nav a {
-  display: block;
-  padding: 4px 4px;
-  color: var(--header-color);
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: 600;
-}
-
-nav a:hover {
-  text-decoration: underline;
-}
-
-.flag-icon {
-  width: 0.85em;
-  height: auto;
-  max-width: 100%;
-  margin-right: 10px;
-  border-radius: 50%;
-  border: 1px solid var(--body-color);
-}
-
-.a-and-flag {
-  display: flex;
-  align-items: center;
-  align-content: flex-start;
-}
-
-#id-nav-toggle {
-  display: none;
-}
-
-.nav-toggle {
-  cursor: pointer;
-  position: absolute;
-  right: 1em;
-  top: 0px;
-}
-
-.nav-toggle:before {
-  content: "\e5d2";
-  font-size: 36px;
-  display: none;
-  color: var(--header-color);
-}
-
-@media screen and (max-width: 768px) {
-  nav {
-    padding: 0em;
-  }
-
-  nav ul {
-    display: none;
-    flex-direction: column;
-  }
-
-  .current-nav-section {
-    color: color-mix(in srgb, var(--body-color) 30%, var(--header-bg-color) 70%);
-  }
-
-  nav li {
-    border-bottom: 1px solid var(--border-color);
-    width: 100%;
-  }
-
-  nav li:last-child {
-    border-bottom: none;
-  }
-  
-  .nav-toggle:before {
-    display: block;
-  }
-
-  #id-nav-toggle:checked~nav {
-    border-top: 2px solid var(--border-color);
-    padding: 0;
-    width: 100%;
-    max-width: var(--max-width);
-    background-color: var(--nav-bg-color);
-  }
-
-  #id-nav-toggle:checked~nav ul {
-    display: flex;
-  }
-
-  #id-nav-toggle:checked~nav li {
-    padding: 0.375em 2em;
-  }
-
-  #id-nav-toggle:checked+.nav-toggle:before {
-    content: "\e5cd";
-  }
+  margin: 0;
+  font-family: localFreightProBookRegular, "Times New Roman", Times, serif;
+  color: #444;
+  font-size: 1.1875rem;
+  font-weight: normal;
+  letter-spacing: 0.025rem;
 }
 
 main {
-  border: var(--line-width) solid var(--border-color);
-  background-color: var(--main-bg-color);
-  /* padding: 0em 2em 2em 2em; */
-  color: black;
+  max-width: var(--max-width);
+  margin: 20px auto;
+  padding: 0 7.5%;
 }
 
-main:not(.separator) {
-  padding: 0em 2em 2em 2em;
+main em {
+  font-family: localFreightProBookItalic, "Times New Roman", Times, serif;
+  font-style: normal;
 }
 
-main a:not(.fancy-button a, .biblink a, .bibname a) {
-  text-decoration: none;
-  font-style: italic;
-  color: black;
+main h2 {
+  font-family: localFreightProBookItalic, "Times New Roman", Times, serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem;
+  /* color: #3daa8b; */
 }
 
-main a:not(.fancy-button a, .biblink a):hover {
-  box-shadow: 0px 3px 0 0 var(--highlight-color);
-}
-
-main h1, h2, h3 {
-  color: var(--header-color);
-  margin: 1em 0em 0.5em 0em;
-}
-
-main p {
-  line-height: 1.1;
-  margin: 1em 0em 1em 0em;
-}
-
-main li + li {
-  margin-top: 15px;
+li + li {
+  margin-top: 20px;
 }
 
 footer {
-  padding: 1em 2em 1em 2em;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  margin-top: 30px;
+  padding: 0 7.5%;
 }
 
-/* Icones */
-.material-symbols-outlined {
-  font-variation-settings:
-    'FILL' 0,
-    'wght' 400,
-    'GRAD' 0,
-    'opsz' 24
+footer .footer-container {
+  color: #666666;
+  font-family: "Inter", serif;
+  font-size: 0.85rem;
+  font-weight: 300;
+  border-top: 1px solid #808080;
+  padding: 20px 0;
 }
 
-/* Buttons */
-.fancy-button {
-  max-width: 100%;
-  padding: 0.5em;
-  font-weight: bold;
-  background-color: var(--main-bg-color);
-  border: var(--line-width) solid var(--border-color);
-  display: inline-block;
-  border-radius: 0px 0px 0px 0px;
-  box-shadow: 3px 3px 0 0 var(--border-color); 
+/* Hyperlinks */
+main a {
+  color: #cb791a;
+  text-decoration: none;
+  transition: color 0.2s;
 }
 
-.fancy-button a {
-  color: var(--body-color);
+main a:hover {
+  color: #8c5313;
   text-decoration: none;
 }
 
-.fancy-button:hover {
-  background-color: var(--fancy-button-color);
-  box-shadow: 5px 5px 0 0 var(--border-color); 
+/* Bibliography */
+.bib-title {
+  font-family: localFreightProSemiBoldRegular, "Times New Roman", Times, serif;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0rem;
 }
 
-/* Profile picture and contact */
-.container-contact {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-end;
+.bib-status {
+  font-family: localFreightProBookItalic, "Times New Roman", Times, serif;
+  font-style: normal;
+  font-weight: 400;
 }
 
-.container-contact img {
-  width: 250px;
-  max-width: 100%;
-  height: auto;
-  margin-right: 2em;
-  border: var(--line-width) solid var(--border-color);
+/* Oral communications */
+.oral-communication summary {
+  font-family: localFreightProBookItalic, "Times New Roman", Times, serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding-bottom: 10px;
+  transition: color 0.2s;
 }
 
-.container-contact div {
-  max-width: 100%;
+.oral-communication + .oral-communication {
+  margin-top: 20px;
 }
 
-hr.separator {
-  border-top: 1px solid;
-  color: var(--header-color);
-  margin: 1em 0em;
+.oral-communication summary:hover {
+  color: #cb791a;
+}
+
+.oral-communication[open] summary {
+  margin-bottom: 20px; /* Adds space when expanded */
+}
+
+.listing-table {
+  border-collapse: separate;
+  width: 100%;
+  margin: auto;
+  border-spacing: 0px 20px;
+  margin-top: -20px;
+}
+
+.listing-table .cell-date {
+  vertical-align: top;
+  text-align: right;
+  padding-right: 20px;
 }
