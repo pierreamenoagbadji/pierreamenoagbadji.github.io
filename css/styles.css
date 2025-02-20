@@ -79,6 +79,41 @@ main a:hover {
   font-weight: 400;
 }
 
+.abstract summary::before {
+  content: "+";
+  display: inline-block;
+  width: 20px;  /* Ensures consistent width */
+  text-align: center; /* Center align */
+}
+
+.abstract summary {
+  color: #666666;
+  font-family: localFreightProBookItalic, "Times New Roman", Times, serif;
+  font-weight: 400;
+  letter-spacing: 0.025rem;
+  font-size: 0.85rem;
+  cursor: pointer;
+  list-style: none; /* Remove default marker */
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.abstract summary:hover {
+  color: #cb791a;
+}
+
+.abstract > div {
+  margin-left: 20px;
+  font-size: 0.85rem;
+  color: #666666;
+  /* font-family: localFreightProBookItalic, "Times New Roman", Times, serif; */
+}
+
+.abstract[open] summary {
+  margin-bottom: 10px; /* Adds space when expanded */
+}
+
 /* Oral communications */
 .oral-communication summary {
   font-family: localFreightProBookItalic, "Times New Roman", Times, serif;
