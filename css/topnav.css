@@ -17,7 +17,7 @@ nav {
 
 /* Title */
 .nav-title {
-  font-size: 1.5rem;
+  font-size: 24px;
   font-family: localFreightProBookItalic, "Times New Roman", Times, serif;
 }
 
@@ -43,8 +43,8 @@ nav {
   color: #666666;
   font-family: "Inter", serif;
   font-weight: 400;
-  letter-spacing: 0.025rem;
-  font-size: 0.9rem;
+  letter-spacing: 0.4px;
+  font-size: 14.4px;
   padding: 10px 10px;
   transition: color 0.3s;
 }
@@ -62,7 +62,7 @@ nav {
 
 /* Flag icon */
 .flag-icon {
-  width: 0.85rem;
+  width: 13.6px;
   height: auto;
   max-width: 100%;
   margin-right: 10px;
@@ -74,7 +74,7 @@ nav {
 .hamburger {
   display: none;
   color: #666666;
-  font-size: 1.8rem;
+  font-size: 28.8px;
   cursor: pointer;
   background: none;
   border: none;
@@ -82,7 +82,7 @@ nav {
 }
 
 .hamburger .material-icons {
-  font-size: 2rem;
+  font-size: 32px;
 }
 
 /* Hover effect on hamburger */
@@ -105,8 +105,8 @@ nav {
   color: #666666;
   font-family: "Inter", serif;
   font-weight: 400;
-  letter-spacing: 0.025rem;
-  font-size: 0.9rem;
+  letter-spacing: 0.4px;
+  font-size: 14.4px;
   padding: 20px 7.5%;
   border-bottom: 1px solid #666666;
   text-decoration: none;
