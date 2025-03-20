@@ -5,6 +5,10 @@
 }
 
 /* Global styles */
+b {
+  font-weight: 600;
+}
+
 body {
   margin: 0;
   font-family: "Source Serif 4";
