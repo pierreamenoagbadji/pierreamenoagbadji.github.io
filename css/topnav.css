@@ -91,7 +91,7 @@ nav {
 
 .mobile-menu a {
   display: block;
-  background: white;
+  background: var(--main-background-color);
   color: #666666;
   font-family: "Inter", serif;
   font-weight: 400;
