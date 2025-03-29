@@ -114,7 +114,7 @@ nav {
 }
 
 .mobile-menu a:hover {
-  background: #f2f2f2;
+  background: var(--nav-background-color);
   color: var(--link-color);
 }
 
