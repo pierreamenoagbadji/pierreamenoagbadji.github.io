@@ -12,6 +12,10 @@
     
     <!-- Java Script -->
     <script src="../../js/toggleMenu.js"></script> 
+
+    <!-- MathJax -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     
     <!-- Polices -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,37 +35,31 @@
             </button>
             <div class="nav-links">
                 <a href="../../">Home</a>
-                <a href="../research", class="active">Research</a>
+                <a href="../publications", class="active">Publications</a>
                 <a href="../teaching">Teaching</a>
                 <a href="../../assets/CV_AMENOAGBADJI_en.pdf", target="_blank">Resume</a>
-                <a href="../../FR/research/"><img src="../../assets/drapeauFR_small.png", alt="Drapeau FR", class="flag-icon">FR</a>
             </div>
         </div>
 
         <!-- Mobile menu (Initially hidden) -->
         <div class="mobile-menu" id="mobileMenu">
             <a href="../../">Home</a>
-            <a href="../research", class="active">Research</a>
+            <a href="../publications", class="active">Publications</a>
             <a href="../teaching">Teaching</a>
             <a href="../../assets/CV_AMENOAGBADJI_en.pdf", target="_blank">Resume</a>
-            <a href="../../FR/research/"><img src="../../assets/drapeauFR_small.png", alt="Drapeau FR", class="flag-icon">FR</a>
         </div>
     </nav>
     
     <main>
-        <section>
-            <h1>Research interests</h1>
-            <p>
-            My current research interests lie in the mathematical study and the numerical simulation of <em>time-harmonic wave propagation</em> phenomena in heterogeneous ― <em>periodic</em> or <em>quasiperiodic</em> ― structures with <em>defects</em>. Because the corresponding problems are posed in infinite domains, I am interested in:
+        <section class="page-navigation">
+            <h1>Page navigation</h1>
             <ul>
-                <li>designing <em>numerical methods</em> to truncate the computational domain, without inducing any spurious reflexions;</li>
-                <li>the study of the <em>limiting absorption principle</em>;</li>
-                <li>in the context of my postdoc, the study and the numerical computation of <em>guided modes</em> along lineic defects.</li>
+                <li><a href="#publications-id">Publications</a></li>
+                <li><a href="#oral-communications-id">Oral communications</a></li>
             </ul>
-            </p>
         </section>
-
-        <section>
+        
+        <section id="publications-id">
             <h1>Publications</h1>
             A list is also available on <span class="biblink"><a href="https://hal.science/search/index/q/*/authFullName_s/Pierre+Amenoagbadji", target="_blank">HAL</a></span> or <span class="biblink"><a href="https://arxiv.org/search/math?searchtype=author&query=Amenoagbadji%2C+P", target="_blank">arXiv</a></span>.
             <!-- <li>
@@ -77,46 +75,58 @@
             <h2>Preprints</h2>
             <ul>
                 <li>
-                    <span class="bib-author">P. Amenoagbadji, S. Fliss, P. Joly</span>: 
+                    <span class="bib-author">P. Amenoagbadji, S. Fliss, P. Joly</span>, 
                     <span class="bib-title">Time-harmonic wave propagation in junctions of two periodic half-spaces</span>, 
-                    <span class="bib-status">submitted</span>, 
-                    2024. 
-                    [<a href="https://arxiv.org/abs/2404.03806", target="_blank">arXiv</a>]
-                    [<a href="https://hal.science/hal-04533522v2", target="_blank">HAL</a>]
-                    <!-- <details class="abstract">
-                        <summary>Abstract</summary>
-                        <div>
-                            We are interested in the Helmholtz equation in a junction of two periodic half-spaces. When the overall medium is periodic in the direction of the interface, Fliss and Joly (2019) proposed a method which consists in applying a partial Floquet-Bloch transform along the interface, to obtain a family of waveguide problems parameterized by the Floquet variable. In this paper, we consider two model configurations where the medium is no longer periodic in the direction of the interface. Inspired by the works of Gérard-Varet and Masmoudi (2011, 2012), and Blanc, Le Bris, and Lions (2015), we use the fact that the overall medium has a so-called quasiperiodic structure, in the sense that it is the restriction of a higher dimensional periodic medium. Accordingly, the Helmholtz equation is lifted onto a higher dimensional problem with coefficients that are periodic along the interface. This periodicity property allows us to adapt the tools previously developed for periodic media. However, the augmented PDE is elliptically degenerate (in the sense of the principal part of its differential operator) and thus more delicate to analyse.
-                        </div>
-                    </details> -->
+                    <span class="bib-status">accepted for publication in Pure and Applied Analysis</span>, 
+                    2025.
+                    <div class="bib-links">
+                        <details>
+                            <summary>ABSTRACT</summary>
+                            <div class="abstract-content">
+                                We are interested in the Helmholtz equation in a junction of two periodic half-spaces. When the overall medium is periodic in the direction of the interface, <i>Fliss and Joly (2019)</i> proposed a method which consists in applying a partial Floquet-Bloch transform along the interface, to obtain a family of waveguide problems parameterized by the Floquet variable. In this paper, we consider two model configurations where the medium is no longer periodic in the direction of the interface. Inspired by the works of <i>Gérard-Varet and Masmoudi (2011, 2012)</i>, and <i>Blanc, Le Bris, and Lions (2015)</i>, we use the fact that the overall medium has a so-called quasiperiodic structure, in the sense that it is the restriction of a higher dimensional periodic medium. Accordingly, the Helmholtz equation is lifted onto a higher dimensional problem with coefficients that are periodic along the interface. This periodicity property allows us to adapt the tools previously developed for periodic media. However, the augmented PDE is elliptically degenerate (in the sense of the principal part of its differential operator) and thus more delicate to analyse.
+                            </div>
+                        </details>
+                        <a href="https://arxiv.org/abs/2404.03806", target="_blank">ARXIV</a>
+                        <a href="https://hal.science/hal-04533522v2", target="_blank">HAL</a>
+                    </div>
                 </li>
             </ul>
 
             <h2>Articles in peer-reviewed journals</h2>
             <ul>
                 <li>
-                    <span class="bib-author">P. Amenoagbadji, S. Fliss, P. Joly</span>: 
+                    <span class="bib-author">P. Amenoagbadji, S. Fliss, P. Joly</span>, 
                     <span class="bib-title">Wave propagation in one-dimensional quasiperiodic media</span>,
-                    <span class="bib-status">Communications in Optimization Theory, "Special Issue on numerical analysis and control dedicated to the memory of Professor Roland Glowinski"</span>, 
+                    <span class="bib-status">Communications in Optimization Theory (2023) 17, "Special Issue on numerical analysis and control dedicated to the memory of Professor Roland Glowinski"</span>, 
                     2023.
-                    [<a href="https://cot.mathres.org/archives/1526", target="_blank">DOI</a>]
-                    [<a href="https://arxiv.org/abs/2301.01159", target="_blank">arXiv</a>]
-                    [<a href="https://hal.science/hal-03786730v2", target="_blank">HAL</a>]
+                    <div class="bib-links">
+                        <details>
+                            <summary>ABSTRACT</summary>
+                            <div class="abstract-content">
+                                This work is devoted to the resolution of the Helmholtz equation \( -(\mu\, u')' - \rho\, \omega^2\, u = f \) in a one-dimensional unbounded medium. We assume the coefficients of this equation to be local perturbations of quasiperiodic functions, namely the traces along a particular line of higher-dimensional periodic functions. Using the definition of quasiperiodicity, the problem is lifted onto a higher-dimensional problem with periodic coefficients. The periodicity of the augmented problem allows us to extend the ideas of the DtN-based method developed for the elliptic case. However, the associated mathematical and numerical analysis of the method are more delicate because the augmented PDE is degenerate, in the sense that the principal part of its operator is no longer elliptic. We also study the numerical resolution of this PDE, which relies on the resolution of Dirichlet cell problems as well as a constrained Riccati equation. 
+                            </div>
+                        </details>
+                        <a href="https://cot.mathres.org/archives/1526", target="_blank">JOURNAL</a>
+                        <a href="https://arxiv.org/abs/2301.01159", target="_blank">ARXIV</a>
+                        <a href="https://hal.science/hal-03786730v2", target="_blank">HAL</a>
+                    </div>
                 </li>
             </ul>
 
             <h2>Thesis manuscript</h2>
             <ul>
                 <li>
-                    <span class="bib-author">P. Amenoagbadji</span>: 
+                    <span class="bib-author">P. Amenoagbadji</span>, 
                     <span class="bib-title">Wave propagation in quasiperiodic media</span>,
                     <span class="bib-status">thesis defended on 12/13/2023, before the jury composed of D. Gérard-Varet (President), E. Bonnetier and A. Levitt (Reviewers), B. Delourme, S. Guenneau, and C. Le Bris (Examiners), S. Fliss et P. Joly (Supervisors)</span>.
-                    [<a href="https://theses.hal.science/tel-04452743", target="_blank">HAL</a>]
+                    <div class="bib-links">
+                        <a href="https://theses.hal.science/tel-04452743", target="_blank">HAL thèses</a>
+                    </div>
                 </li>
             </ul>
         </section>
 
-        <section>
+        <section id="oral-communications-id">
             <h1>Oral communications</h1>
             
             <!-- <span class="bib-author"></span> on 
