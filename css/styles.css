@@ -17,6 +17,10 @@ b {
   font-weight: 600;
 }
 
+p {
+  line-height: 1.5;
+}
+
 body {
   margin: 0;
   font-family: "Source Serif 4";
