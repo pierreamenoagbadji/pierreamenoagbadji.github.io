@@ -6,6 +6,7 @@
   --nav-background-color: #e7ebf5; /* #d2e3fc; #f5f0e7 */
   --link-color: #0066cc; /* #cb791a */
   --link-hover-color: #5c7e97; /* #8c5313 */
+  --box-background-color: rgb(231 235 245 / 0.5);
 }
 
 /* Global styles */
@@ -93,7 +94,7 @@ main a:hover {
 /* Page navigation */
 /*******************/
 .page-navigation ul {
-  background-color: color-mix(in srgb, var(--nav-background-color) 50%, var(--main-background-color) 50%);
+  background-color: var(--box-background-color);
   overflow-wrap: break-word;
   border: 1px dashed;
   padding-top: 20px;
@@ -178,7 +179,7 @@ main a:hover {
   order: 3; /* Force to bottom of flex container */
   padding: 12px;
   border: 1px dashed #808080;
-  background: color-mix(in srgb, var(--nav-background-color) 50%, var(--main-background-color) 50%);
+  background: var(--box-background-color);
   margin-top: 16px;
   font-size: 16px;
   font-weight: 350;
