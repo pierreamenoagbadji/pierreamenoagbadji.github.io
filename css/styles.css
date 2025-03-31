@@ -6,7 +6,7 @@
   --nav-background-color: #e7ebf5; /* #d2e3fc; #f5f0e7 */
   --link-color: #0066cc; /* #cb791a */
   --link-hover-color: #5c7e97; /* #8c5313 */
-  --box-background-color: rgb(231 235 245 / 0.5);
+  --box-background-color: color-mix(in srgb, var(--nav-background-color) 40%, transparent);
 }
 
 /* Global styles */
