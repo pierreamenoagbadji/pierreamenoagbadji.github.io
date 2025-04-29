@@ -28,8 +28,8 @@ body {
   color: var(--main-color);
   background-color: var(--main-background-color);
   font-size: 19px;
-  font-weight: 360;
-  letter-spacing: 0.1px;
+  font-weight: 370;
+  /* letter-spacing: 0.1px; */
 }
 
 main {
