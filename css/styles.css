@@ -2,7 +2,7 @@
 :root {
   --max-width: calc(900px - (30px * 2));
   --main-color: #444;
-  --main-background-color: #fffff8;
+  --main-background-color: #faf9f5; /* #fffff8; */
   --nav-background-color: #e7ebf5; /* #d2e3fc; #f5f0e7 */
   --link-color: #0066cc; /* #cb791a */
   --link-hover-color: #5c7e97; /* #8c5313 */
