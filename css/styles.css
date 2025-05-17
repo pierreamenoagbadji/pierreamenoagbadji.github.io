@@ -4,9 +4,16 @@
   --main-color: #444;
   --main-background-color: #faf9f5; /* #fffff8; */
   --nav-background-color: #e7ebf5; /* #d2e3fc; #f5f0e7 */
+  --main-font: "Source Serif 4", "Times New Roman", Times, serif;
   --link-color: #0066cc; /* #cb791a */
   --link-hover-color: #5c7e97; /* #8c5313 */
   --box-background-color: color-mix(in srgb, var(--nav-background-color) 40%, transparent);
+}
+
+/* Fonts */
+@font-face {
+  font-family: localFreightProBookItalic;
+  src: url(../fonts/freighttext-pro-book-italic.ttf);
 }
 
 /* Global styles */
@@ -19,17 +26,17 @@ b {
 }
 
 p {
-  line-height: 1.5;
+  line-height: 1.375;
 }
 
 body {
   margin: 0;
-  font-family: "Source Serif 4";
+  font-family: var(--main-font);
   color: var(--main-color);
   background-color: var(--main-background-color);
   font-size: 19px;
-  font-weight: 370;
-  /* letter-spacing: 0.1px; */
+  font-weight: 365;
+  letter-spacing: -0.006875rem;
 }
 
 main {
@@ -39,21 +46,20 @@ main {
 }
 
 main em {
-  font-family: "Source Serif 4", "Times New Roman", Times, serif;
+  font-family: var(--main-font);
   font-style: italic;
   font-style: normal;
 }
 
 main h1 {
-  font-family: "Source Serif 4", "Times New Roman", Times, serif;
+  font-family: var(--main-font);
   font-weight: 650;
   color: var(--main-color);
   opacity: 0.9;
 }
 
 main h2 {
-  font-family: "Source Serif 4", "Times New Roman", Times, serif;
-  font-style: italic;
+  font-family: localFreightProBookItalic;
   font-weight: 400;
   font-size: 24px;
 }
@@ -105,14 +111,14 @@ main a:hover {
 /* Bibliography links */
 /**********************/
 .bib-title {
-  font-family: "Source Serif 4", "Times New Roman", Times, serif;
+  font-family: var(--main-font);
   font-style: normal;
   font-weight: 600;
   letter-spacing: px;
 }
 
 .bib-status {
-  font-family: "Source Serif 4", "Times New Roman", Times, serif;
+  font-family: var(--main-font);
   font-style: italic;
 }
 
@@ -205,7 +211,7 @@ main a:hover {
 /* Oral communications */
 /***********************/
 .oral-communication summary {
-  font-family: "Source Serif 4", "Times New Roman", Times, serif;
+  font-family: var(--main-font);
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
