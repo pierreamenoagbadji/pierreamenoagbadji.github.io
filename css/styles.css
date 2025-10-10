@@ -152,7 +152,6 @@ main a:hover {
 
 .bib-links summary {
   list-style: none;
-  order: 1; /* Force summary to first position */
   position: relative;
   padding-right: 24px;
 }
@@ -181,11 +180,11 @@ main a:hover {
 .bib-links .abstract-content {
   display: none;
   width: 100%;
-  order: 3; /* Force to bottom of flex container */
   padding: 12px;
   border: 1px dashed #808080;
   background: var(--box-background-color);
-  margin-top: 16px;
+  margin-top: 12px;
+  margin-bottom: 12px;
   font-size: 16px;
   font-weight: 350;
   letter-spacing: -0.25px;
@@ -204,7 +203,6 @@ main a:hover {
 .bib-links a {
   color: #0066cc;
   text-decoration: none;
-  order: 2; /* Keep links after summary */
   position: static; /* Reset positioning */
 }
 
