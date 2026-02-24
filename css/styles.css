@@ -1,6 +1,6 @@
 /* Variables */
 :root {
-  --max-width: calc(900px - (30px * 2));
+  --max-width: calc(700px - (30px * 2));
   --main-color: #444;
   --main-background-color: #faf9f5; /* #fffff8; */
   --nav-background-color: #e7ebf5; /* #d2e3fc; #f5f0e7 */
@@ -34,7 +34,7 @@ body {
   font-family: var(--main-font);
   color: var(--main-color);
   background-color: var(--main-background-color);
-  font-size: 19px;
+  font-size: 18px;
   font-weight: 370;
   letter-spacing: -0.006875rem;
 }
