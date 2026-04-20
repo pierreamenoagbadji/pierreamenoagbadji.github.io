@@ -1,28 +1,51 @@
-/* Variables */
+/* Fonts */
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+/* ────────── Global variables ───────────────────── */
+/* :root {
+  --max-width: calc(700px - (30px * 2));
+  --color-main-primary: #414141;
+  --color-main-secondary: #000000;
+  --color-main-bold: #3C372B;
+  --color-main-background: white;
+  --color-nav: #3C372B;
+  --color-nav-title: #3C372B;
+  --color-nav-background: #f5f1e5;
+  --color-nav-menu-background: #f5f1e5;
+  --font-body-normal: "Source Sans 3", sans-serif;
+  --color-main-link: #0066b3; 
+  --color-main-highlight: #5c7e97;
+  --color-nav-link: #fdb913;
+  --box-background-color: color-mix(in srgb, var(--color-nav-background) 40%, transparent);
+} */
+
 :root {
   --max-width: calc(700px - (30px * 2));
-  --main-color: #444;
-  --main-background-color: #faf9f5; /* #fffff8; */
-  --nav-background-color: #e7ebf5; /* #d2e3fc; #f5f0e7 */
-  --main-font: "Source Serif 4", "Times New Roman", Times, serif;
-  --link-color: #0066cc; /* #cb791a */
-  --link-hover-color: #5c7e97; /* #8c5313 */
-  --box-background-color: color-mix(in srgb, var(--nav-background-color) 40%, transparent);
+  --color-main-primary: #414141;
+  --color-main-secondary: #000000;
+  --color-main-bold: #3C372B;
+  --color-main-background: white;
+  --color-nav: #3C493F;
+  --color-nav-title: #3C493F;
+  --color-nav-background: #F0F7F4;
+  --color-nav-menu-background: #F0F7F4;
+  --font-body-normal: "Source Sans 3", sans-serif;
+  --color-main-link: #396A55; 
+  --color-main-highlight: #000000;
+  --color-nav-link: #7E8D85;
+  --box-background-color: color-mix(in srgb, var(--color-nav-background) 40%, transparent);
 }
 
-/* Fonts */
-@font-face {
-  font-family: localFreightProBookItalic;
-  src: url(../fonts/freighttext-pro-book-italic.ttf);
-}
-
-/* Global styles */
+/* ──────────── Global styles ──────────────────── */
 html {
   scroll-behavior: smooth
 }
 
 b {
   font-weight: 600;
+  color: var(--color-main-bold);
 }
 
 p {
@@ -30,38 +53,49 @@ p {
 }
 
 body {
+  -webkit-font-smoothing: antialiased;       /* Chrome, Safari */
+  text-rendering: optimizeLegibility;
   margin: 0;
-  font-family: var(--main-font);
-  color: var(--main-color);
-  background-color: var(--main-background-color);
+  font-family: var(--font-body-normal);
+  color: var(--color-main-primary);
+  background-color: var(--color-main-background);
   font-size: 18px;
   font-weight: 370;
-  letter-spacing: -0.006875rem;
+  font-variation-settings: "opsz" 18;
+  /* letter-spacing: 0.01em; */
+  font-variant-ligatures: common-ligatures;
+  font-variant-numeric: oldstyle-nums;
 }
 
 main {
   max-width: var(--max-width);
-  margin: 30px auto;
-  padding: 0 7.5%;
+  margin: 0 auto;
+  margin-top: -72px;    /* tirer vers le haut pour chevaucher <nav> */
+  padding: 32px 7.5%;
+  position: relative;
+  z-index: 1;
+  background-color: var(--color-main-background);
+  /* box-shadow: 0 -4px 18px rgba(0, 0, 0, 0.10); */
 }
 
 main em {
-  font-family: var(--main-font);
+  font-family: var(--font-body-normal);
   font-style: italic;
-  font-style: normal;
 }
 
 main h1 {
-  font-family: var(--main-font);
+  font-family: var(--font-body-normal);
   font-weight: 650;
-  color: var(--main-color);
+  font-size: 28px;
+  color: var(--color-main-secondary);
   opacity: 0.9;
 }
 
 main h2 {
-  font-family: localFreightProBookItalic;
-  font-weight: 400;
-  font-size: 24px;
+  font-family: var(--font-body-normal);
+  color: var(--color-main-bold);
+  font-weight: 550;
+  font-size: 22px;
 }
 
 li + li {
@@ -86,39 +120,49 @@ footer .footer-container {
 
 /* Hyperlinks */
 main a {
-  color: var(--link-color);
+  color: var(--color-main-link);
   text-decoration: none;
   transition: color 0.2s;
 }
 
 main a:hover {
-  color: var(--link-hover-color);
+  color: var(--color-main-highlight);
   text-decoration: none;
 }
 
-/*******************/
-/* Page navigation */
-/*******************/
-.page-navigation ul {
+/*──────────────────────────────────────────────────────────────────*/
+/* ──────────────────────────── Page navigation  ────────────────── */
+/*──────────────────────────────────────────────────────────────────*/
+.page-navigation-title {
   background-color: var(--box-background-color);
-  overflow-wrap: break-word;
-  border: 1px dashed;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  font-weight: 600;
+  font-size: 24px;
+  padding: 8px 0px 8px 25px;
+  border: 1px solid #808080;
+  border-bottom: none;
 }
 
-/**********************/
-/* Bibliography links */
-/**********************/
+.page-navigation ul {
+  overflow-wrap: break-word;
+  border: 1px solid #808080;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 0px;
+}
+
+/*──────────────────────────────────────────────────────*/
+/* ─────────────────── Publications  ────────────────── */
+/*──────────────────────────────────────────────────────*/
 .bib-title {
-  font-family: var(--main-font);
+  color: var(--color-main-bold);
+  font-family: var(--font-body-normal);
   font-style: normal;
   font-weight: 600;
   letter-spacing: px;
 }
 
 .bib-status {
-  font-family: var(--main-font);
+  font-family: var(--font-body-normal);
   font-style: italic;
 }
 
@@ -128,7 +172,6 @@ main a:hover {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  /* margin: 10px 0; */
 }
 
 .bib-links details {
@@ -139,9 +182,9 @@ main a:hover {
 .bib-links a {
   font-family: "Inter", serif;
   font-weight: 350;
-  font-size: 16px;
+  font-size: 14px;
   letter-spacing: 0.25px;
-  color: var(--link-color);
+  color: var(--color-main-link);
   cursor: pointer;
   border: 1px solid;
   margin-right: 20px;
@@ -173,7 +216,7 @@ main a:hover {
 }
 
 .bib-links summary:hover {
-  color: var(--link-hover-color);
+  color: var(--color-main-highlight);
 }
 
 /* Abstract content styling */
@@ -181,14 +224,14 @@ main a:hover {
   display: none;
   width: 100%;
   padding: 12px;
-  border: 1px dashed #808080;
+  border: 1px solid #808080;
   background: var(--box-background-color);
   margin-top: 12px;
   margin-bottom: 12px;
   font-size: 16px;
   font-weight: 350;
   letter-spacing: -0.25px;
-  border-left: 3px solid var(--link-color);
+  border-left: 4px solid var(--color-nav-link);
 }
 
 .bib-links details[open] summary {
@@ -201,16 +244,16 @@ main a:hover {
 
 /* Links styling */
 .bib-links a {
-  color: #0066cc;
+  color: var(--color-main-link);
   text-decoration: none;
   position: static; /* Reset positioning */
 }
 
-/***********************/
-/* Oral communications */
-/***********************/
+/*────────────────────────────────────────────────*/
+/*─────────────────── Talks  ──────────────────── */
+/*────────────────────────────────────────────────*/
 .oral-communication summary {
-  font-family: var(--main-font);
+  font-family: var(--font-body-normal);
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
@@ -224,7 +267,7 @@ main a:hover {
 }
 
 .oral-communication summary:hover {
-  color: var(--link-color);
+  color: var(--color-main-link);
 }
 
 .oral-communication[open] summary {
@@ -243,4 +286,18 @@ main a:hover {
   vertical-align: top;
   text-align: right;
   padding-right: 20px;
+  padding-left: 10px;
+}
+
+.conference {
+  border-left: 4px solid var(--color-nav-link);
+}
+
+/* td.conference + td::after {
+  content: " ■";
+  color: var(--color-nav-link);
+} */
+
+.conference-tag {
+  color: var(--color-nav-link);
 }

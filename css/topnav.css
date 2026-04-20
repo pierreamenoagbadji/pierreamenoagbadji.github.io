@@ -1,73 +1,89 @@
 /* Navigation bar */
 nav {
-  background-color: var(--nav-background-color);
+  background-color: var(--color-nav-background);
   width: 100%;
   padding: 0;
+  padding-top: 16px;
+  padding-bottom: 48px;
+  position: relative;
 }
 
 /* Navigation container */
 .nav-container {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: 30px 7.5%;
+  padding: 30px 7.5% 0 7.5%;
 }
 
 /* Title */
 .nav-title {
-  font-family: localFreightProBookItalic;
+  font-family: var(--font-body-normal);
+  font-weight: 650;
   font-size: 28px;
+  flex: 1;
+  padding-bottom: 36px;
 }
 
 .nav-title a {
   text-decoration: none;
-  color: #666666;
+  color: var(--color-nav-title);
   transition: color 0.3s;
 }
 
 .nav-title a:hover {
-  color: var(--link-color);;
+  color: var(--color-nav-link);;
 }
 
 /* Navigation links */
 .nav-links {
   display: flex;
   gap: 10px;
-  flex-wrap: wrap
+  flex-wrap: wrap;
+  flex-basis: 100%; 
+  padding-bottom: 24px;
+}
+
+.nav-links a:first-child,
+.nav-links .nav-dropdown:first-child > a {
+  padding-left: 0;
 }
 
 .nav-links a {
   text-decoration: none;
-  color: #666666;
+  color: var(--color-nav);
   font-family: "Inter", serif;
   font-weight: 400;
   letter-spacing: 0.4px;
   font-size: 16px;
-  padding: 10px 10px;
+  padding: 0px 10px 16px 10px;
+  margin-right: 10px;
   transition: color 0.3s;
 }
 
 /* Highlight the current active link */
 .nav-links a.active {
-  color: var(--link-color);
+  color: var(--color-nav-link);
+  box-shadow: inset 0 -6px 0 var(--color-nav-link);
 }
 
 /* Hover effect */
 .nav-links a:hover {
-  color: var(--link-color);
+  color: var(--color-nav-link);
 }
 
 /* Hamburger menu icon (hidden by default) */
 .hamburger {
   display: none;
-  color: #666666;
+  color: var(--color-nav);
   font-size: 28.8px;
   cursor: pointer;
   background: none;
   border: none;
   transition: color 0.3s;
+  padding-bottom: 32px;
 }
 
 .hamburger .material-icons {
@@ -76,7 +92,7 @@ nav {
 
 /* Hover effect on hamburger */
 .hamburger:hover {
-  color: var(--link-color);
+  color: var(--color-nav-link);
 }
 
 /* Responsive menu (hidden by default) */
@@ -85,18 +101,20 @@ nav {
   text-align: center;
   padding: 0;
   margin: 0;
-  text-align: left
+  text-align: left;
+  position: relative;
+  z-index: 2;
 }
 
 .mobile-menu a {
   display: block;
-  background: var(--main-background-color);
-  color: #666666;
+  background: var(--color-nav-menu-background);
+  color: var(--color-nav);
   font-family: "Inter", serif;
   font-weight: 400;
   letter-spacing: 0.4px;
   font-size: 16px;
-  padding: 20px 7.5%;
+  padding: 20px 8.45%;
   border-bottom: 1px solid #666666;
   text-decoration: none;
   margin: 0;
@@ -105,16 +123,17 @@ nav {
 
 /* Highlight the current active link */
 .mobile-menu a.active {
-  color: var(--link-color);
+  color: var(--color-nav-link);
+  box-shadow: inset 6px 0 0 var(--color-nav-link);
 }
 
 .mobile-menu a:first-child {
   border-top: 1px solid #808080;
-}
+} 
 
 .mobile-menu a:hover {
-  background: var(--nav-background-color);
-  color: var(--link-color);
+  background: var(--color-main-background);
+  color: var(--color-nav-link);
 }
 
 /* Responsive styles */

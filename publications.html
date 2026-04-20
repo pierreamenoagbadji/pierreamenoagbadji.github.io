@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/waves_24dp_000000_FILL0_wght400_GRAD0_opsz24.png">
+    <title>Pierre Amenoagbadji</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/topnav.css">
+    
+    <!-- Java Script -->
+    <script src="js/toggleMenu.js"></script> 
+
+    <!-- MathJax -->
+    <!-- <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script> -->
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+
+    <nav>
+        <div class="nav-container">
+            <div class="nav-title"><a href="home.html", class="active">Pierre Amenoagbadji</a></div>
+            <button class="hamburger" onclick="toggleMenu()">
+                <span class="material-icons" id="menuIcon">menu</span>
+            </button>
+            <div class="nav-links">
+                <a href="home.html">Home</a>
+                <!-- <a href="research.html">Research</a> -->
+                <a href="publications.html", class="active">Publications</a>
+                <a href="teaching.html">Teaching</a>
+                <a href="talks.html">Talks</a>
+                <a href="assets/CV_AMENOAGBADJI_en.pdf", target="_blank">Resume</a>
+            </div>
+        </div>
+
+        <!-- Mobile menu (Initially hidden) -->
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="home.html">Home</a>
+            <!-- <a href="research.html">Research</a> -->
+            <a href="publications.html", class="active">Publications</a>
+            <a href="teaching.html">Teaching</a>
+            <a href="talks.html">Talks</a>
+            <a href="assets/CV_AMENOAGBADJI_en.pdf", target="_blank">Resume</a>
+        </div>
+    </nav>
+    
+    <main>
+        <!-- <section class="page-navigation">
+            <div class="page-navigation-title">Outline</div>
+            <ul>
+                <li><a href="#publications-id">Publications</a></li>
+                <li><a href="#oral-communications-id">Oral communications</a></li>
+            </ul>
+        </section> -->
+        
+        <section id="publications-id">
+            <h1>Publications</h1>
+            A list is also available on <span class="biblink"><a href="https://hal.science/search/index/q/*/authFullName_s/Pierre+Amenoagbadji", target="_blank">HAL</a></span> or <span class="biblink"><a href="https://arxiv.org/search/math?searchtype=author&query=Amenoagbadji%2C+P", target="_blank">arXiv</a></span>.
+            <!-- <li>
+                <span class="bib-author"></span>: 
+                <span class="bib-title"></span>,
+                <span class="bib-status"></span>, 
+                2024. 
+                [<a href="", target="_blank">DOI</a>]
+                [<a href="", target="_blank">arXiv</a>]
+                [<a href="", target="_blank">HAL</a>]
+            </li> -->
+
+            <h2>Preprints</h2>
+            <ul>
+                <li>
+                    <span class="bib-author">P. Amenoagbadji, S. Fliss, P. Joly</span>, 
+                    <span class="bib-title">Wave propagation in the frequency regime in one-dimensional quasiperiodic media ― Limiting absorption principle</span>, 
+                    <span class="bib-status">Submitted</span>, 
+                    2026.
+                    <div class="bib-links">
+                        <a href="https://www.arxiv.org/abs/2602.08442", target="_blank">ARXIV</a>
+                        <a href="https://hal.science/hal-05499244v1", target="_blank">HAL</a>
+                        <details>
+                            <summary>ABSTRACT</summary>
+                            <div class="abstract-content">
+                                We study the one-dimensional Helmholtz equation with (possibly perturbed) quasiperiodic coefficients. Quasiperiodic functions are the restriction of higher dimensional periodic functions along a certain (irrational) direction. In classical settings, for real-valued frequencies, this equation is generally not well-posed: existence of solutions in \(L^2 (\mathbb R) \) is not guaranteed and uniqueness in \(L^2_{loc} (\mathbb R)\)   may fail. This is a well-known difficulty of Helmholtz equations, but it has never been addressed in the quasiperiodic case. We tackle this issue by using the limiting absorption principle, which consists in adding some imaginary part (also called absorption) to the frequency in order to make the equation well-posed in \(L^2 (\mathbb R) \) , and then defining the physically relevant solution by making the absorption tend to zero. In previous work, we introduced a definition of the solution of the equation with absorption based on Dirichlet-to-Neumann (DtN) boundary conditions. This approach offers two key advantages: it facilitates the limiting process and has a direct numerical counterpart. In this work, we first explain why the DtN boundary conditions have to be replaced by Robin-to-Robin boundary conditions to make the absorption go to zero. We then prove, under technical assumptions on the frequency, that the limiting absorption principle holds and we propose a numerical method to compute the physical solution. 
+                            </div>
+                        </details>
+                    </div>
+                </li>
+            </ul>
+
+            <h2>Articles in peer-reviewed journals</h2>
+            <ul>
+                <li>
+                    <span class="bib-author">P. Amenoagbadji, S. Fliss, P. Joly</span>, 
+                    <span class="bib-title">Time-harmonic wave propagation in junctions of two periodic half-spaces</span>, 
+                    <span class="bib-status">Pure and Applied Analysis, Vol. 7 (2025), No. 2, 299–357</span>, 
+                    2025.
+                    <div class="bib-links">
+                        <a href="https://msp.org/paa/2025/7-2/p02.xhtml", target="_blank">JOURNAL</a>
+                        <a href="https://arxiv.org/abs/2404.03806", target="_blank">ARXIV</a>
+                        <a href="https://hal.science/hal-04533522v2", target="_blank">HAL</a>
+                        <details>
+                            <summary>ABSTRACT</summary>
+                            <div class="abstract-content">
+                                We are interested in the Helmholtz equation in a junction of two periodic half-spaces. When the overall medium is periodic in the direction of the interface, <i>Fliss and Joly (2019)</i> proposed a method which consists in applying a partial Floquet-Bloch transform along the interface, to obtain a family of waveguide problems parameterized by the Floquet variable. In this paper, we consider two model configurations where the medium is no longer periodic in the direction of the interface. Inspired by the works of <i>Gérard-Varet and Masmoudi (2011, 2012)</i>, and <i>Blanc, Le Bris, and Lions (2015)</i>, we use the fact that the overall medium has a so-called quasiperiodic structure, in the sense that it is the restriction of a higher dimensional periodic medium. Accordingly, the Helmholtz equation is lifted onto a higher dimensional problem with coefficients that are periodic along the interface. This periodicity property allows us to adapt the tools previously developed for periodic media. However, the augmented PDE is elliptically degenerate (in the sense of the principal part of its differential operator) and thus more delicate to analyse.
+                            </div>
+                        </details>
+                    </div>
+                </li>
+
+                <li>
+                    <span class="bib-author">P. Amenoagbadji, S. Fliss, P. Joly</span>, 
+                    <span class="bib-title">Wave propagation in one-dimensional quasiperiodic media</span>,
+                    <span class="bib-status">Communications in Optimization Theory (2023) 17, "Special Issue on numerical analysis and control dedicated to the memory of Professor Roland Glowinski"</span>, 
+                    2023.
+                    <div class="bib-links">
+                        <a href="https://cot.mathres.org/archives/1526", target="_blank">JOURNAL</a>
+                        <a href="https://arxiv.org/abs/2301.01159", target="_blank">ARXIV</a>
+                        <a href="https://hal.science/hal-03786730v2", target="_blank">HAL</a>
+                        <details>
+                            <summary>ABSTRACT</summary>
+                            <div class="abstract-content">
+                                This work is devoted to the resolution of the Helmholtz equation \( -(\mu\, u')' - \rho\, \omega^2\, u = f \) in a one-dimensional unbounded medium. We assume the coefficients of this equation to be local perturbations of quasiperiodic functions, namely the traces along a particular line of higher-dimensional periodic functions. Using the definition of quasiperiodicity, the problem is lifted onto a higher-dimensional problem with periodic coefficients. The periodicity of the augmented problem allows us to extend the ideas of the DtN-based method developed for the elliptic case. However, the associated mathematical and numerical analysis of the method are more delicate because the augmented PDE is degenerate, in the sense that the principal part of its operator is no longer elliptic. We also study the numerical resolution of this PDE, which relies on the resolution of Dirichlet cell problems as well as a constrained Riccati equation. 
+                            </div>
+                        </details>
+                    </div>
+                </li>
+            </ul>
+
+            <h2>Thesis manuscript</h2>
+            <ul>
+                <li>
+                    <span class="bib-author">P. Amenoagbadji</span>, 
+                    <span class="bib-title">Wave propagation in quasiperiodic media</span>,
+                    <span class="bib-status">thesis defended on 12/13/2023, before the jury composed of D. Gérard-Varet (President), E. Bonnetier and A. Levitt (Reviewers), B. Delourme, S. Guenneau, and C. Le Bris (Examiners), S. Fliss et P. Joly (Supervisors)</span>.
+                    <div class="bib-links">
+                        <a href="https://theses.hal.science/tel-04452743", target="_blank">HAL thèses</a>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </main>
+    
+
+    <footer>
+        <div class="footer-container">
+            &copy; 2024 Pierre Amenoagbadji
+        </div>
+    </footer>
+</body>
+</html>
