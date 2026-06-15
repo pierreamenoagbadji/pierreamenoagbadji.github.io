@@ -18,7 +18,10 @@
   --color-main-link: #0066b3; 
   --color-main-highlight: #5c7e97;
   --color-nav-link: #fdb913;
-  --box-background-color: color-mix(in srgb, var(--color-nav-background) 40%, transparent);
+  --color-box-background: color-mix(in srgb, var(--color-nav-background) 40%, transparent);
+  --color-box: #6e6361;
+  --main-margin-top: -72px;
+  --nav-links-padding-bottom: 24px;
 } */
 
 :root {
@@ -29,13 +32,18 @@
   --color-main-background: white;
   --color-nav: #3C493F;
   --color-nav-title: #3C493F;
-  --color-nav-background: #F0F7F4;
-  --color-nav-menu-background: #F0F7F4;
-  --font-body-normal: "Source Sans 3", sans-serif;
-  --color-main-link: #396A55; 
+  --color-nav-background: #F0F7F4; /* #eef2e3; */
+  --color-nav-menu-background: white; /* #F0F7F4; */
+  --color-main-link: #248567; 
   --color-main-highlight: #000000;
   --color-nav-link: #7E8D85;
-  --box-background-color: color-mix(in srgb, var(--color-nav-background) 40%, transparent);
+  --color-box-background: color-mix(in srgb, #f8f5f3 50%, transparent);/*#f8f5f3;*/
+  --color-box: #6e6361;
+
+  --font-body-normal: "Source Sans 3", sans-serif;
+
+  --main-margin-top: -72px;
+  --nav-links-padding-bottom: 24px;
 }
 
 /* ──────────── Global styles ──────────────────── */
@@ -70,7 +78,7 @@ body {
 main {
   max-width: var(--max-width);
   margin: 0 auto;
-  margin-top: -72px;    /* tirer vers le haut pour chevaucher <nav> */
+  margin-top: var(--main-margin-top);    /* tirer vers le haut pour chevaucher <nav> */
   padding: 32px 7.5%;
   position: relative;
   z-index: 1;
@@ -134,7 +142,7 @@ main a:hover {
 /* ──────────────────────────── Page navigation  ────────────────── */
 /*──────────────────────────────────────────────────────────────────*/
 .page-navigation-title {
-  background-color: var(--box-background-color);
+  background-color: var(--color-box-background);
   font-weight: 600;
   font-size: 24px;
   padding: 8px 0px 8px 25px;
@@ -225,7 +233,8 @@ main a:hover {
   width: 100%;
   padding: 12px;
   border: 1px solid #808080;
-  background: var(--box-background-color);
+  background: var(--color-box-background);
+  color: var(--color-box);
   margin-top: 12px;
   margin-bottom: 12px;
   font-size: 16px;

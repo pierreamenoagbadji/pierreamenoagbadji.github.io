@@ -43,7 +43,7 @@ nav {
   gap: 10px;
   flex-wrap: wrap;
   flex-basis: 100%; 
-  padding-bottom: 24px;
+  padding-bottom: var(--nav-links-padding-bottom);
 }
 
 .nav-links a:first-child,
@@ -132,12 +132,16 @@ nav {
 } 
 
 .mobile-menu a:hover {
-  background: var(--color-main-background);
+  background: var(--color-nav-background);
   color: var(--color-nav-link);
 }
 
 /* Responsive styles */
 @media screen and (max-width: 800px) {
+  main {
+    margin-top: calc(var(--main-margin-top) + var(--nav-links-padding-bottom));
+  }
+
   .nav-links {
     display: none;
   }
