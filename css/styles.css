@@ -24,7 +24,7 @@
   --nav-links-padding-bottom: 24px;
 } */
 
-:root {
+/* :root {
   --max-width: calc(700px - (30px * 2));
   --color-main-primary: #414141;
   --color-main-secondary: #000000;
@@ -32,16 +32,34 @@
   --color-main-background: white;
   --color-nav: #3C493F;
   --color-nav-title: #3C493F;
-  --color-nav-background: #F0F7F4; /* #eef2e3; */
-  --color-nav-menu-background: white; /* #F0F7F4; */
+  --color-nav-background: #F0F7F4;
+  --color-nav-menu-background: white; 
   --color-main-link: #248567; 
   --color-main-highlight: #000000;
   --color-nav-link: #7E8D85;
-  --color-box-background: color-mix(in srgb, #f8f5f3 50%, transparent);/*#f8f5f3;*/
+  --color-box-background: color-mix(in srgb, #f8f5f3 50%, transparent);
   --color-box: #6e6361;
-
   --font-body-normal: "Source Sans 3", sans-serif;
+  --main-margin-top: -72px;
+  --nav-links-padding-bottom: 24px;
+} */
 
+:root {
+  --max-width: calc(700px - (30px * 2));
+  --color-main-primary: #414141;
+  --color-main-secondary: #000000;
+  --color-main-bold: #3C372B;
+  --color-main-background: white;
+  --color-nav: #452b33;
+  --color-nav-title: #452b33;
+  --color-nav-background: #fdfaee;
+  --color-nav-menu-background: white; 
+  --color-nav-link: #452b33;
+  --color-main-link: #2d5f8a; 
+  --color-main-highlight: #000000;
+  --color-box-background: color-mix(in srgb, #fdfaee 50%, transparent);
+  --color-box: #6e6361;
+  --font-body-normal: "Source Sans 3", sans-serif;
   --main-margin-top: -72px;
   --nav-links-padding-bottom: 24px;
 }
@@ -67,7 +85,7 @@ body {
   font-family: var(--font-body-normal);
   color: var(--color-main-primary);
   background-color: var(--color-main-background);
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 370;
   font-variation-settings: "opsz" 18;
   /* letter-spacing: 0.01em; */
